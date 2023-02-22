@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raqam o'yladim</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        font-family: inherit !important;
+        letter-spacing: .7px;
+    }
+
+    button:hover i {
+        color: rgb(253 164 175) !important;
+    }
+</style>
+
+<body class="w-full bg-black text-white ">
+    <div class="all w-full p-10 flex flex-col justify-between mt-9">
+        <div class="left-page w-1/2 container mx-auto text-center">
+            <h1 class="main-title text-4xl">Xush kelibsiz
+                <span class="title text-pink-400">raqam o'yladim</span>
+                o'yiniga
+            </h1>
+            <ul class="begin-list mt-16 ml-10 relative z-1 text-start">
+                <li class="flex items-center">
+                    <button class="begin-btn text-2xl hover:text-pink-300">
+                        <i class="fa-solid fa-caret-right text-[20px] text-white mr-4"></i>Boshlash
+                    </button>
+                </li>
+
+                <li class="Continue ml-8 mt-3 hidden">
+                    <button class="text-xl font-light hover:text-pink-300"> Davom etish</button>
+                </li>
+                <li class="New-game ml-8 hidden">
+                    <button class="text-xl font-light hover:text-pink-300">Boshidan boshlash</button>
+                </li>
+                <li class="flex items-center">
+                    <button class="exit-btn text-2xl mt-2 hover:text-pink-300">
+                        <i class="fa-solid fa-caret-right exit-icon text-[20px] text-white mr-4"></i>
+                        Chiqish
+                    </button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-page container w-[45%] mx-auto hidden text-center">
+            <div class="mt-8 z-10 w-full bg-white h-1"></div>
+            <div
+                class="box min-w-[8rem] p-4 h-24 bg-white text-gray-400 translate-y-[-50%] translate-x-[-50%] absolute left-1/2 flex items-center justify-center">
+                <span class="x-num text-4xl">?</span>
+            </div>
+            <div class="check flex items-center justify-between mt-24 text-lg">
+                <form class="form">
+                    <input type="number" max="20" min="0"
+                        class="input w-16 text-lg h-10 text-sky-500 bg-transparent border-[1px] rounded-md border-white text-center  focus:outline-0 focus:border"
+                        required>
+                    <button class="">Tekshirish</button>
+                </form>
+                <div class="balls text-start">
+                    <h3 class="loading text-3xl mb-5">Loading ...</h3>
+                    <h2>💯 Urinish: <span class="attempts">5</span></h2>
+                    <h2>🥇 Eng yuqori hisob: <span class="max-ball">0</span></h2>
+                </div>
+            </div>
+
+
+            <button class="mainmenu-btn text-[1.35rem] mt-20 ml-10 flex items-center hover:text-pink-300">
+                <i class="fa-solid fa-caret-right text-xl text-white mr-4"></i>
+                Menyu
+            </button>
+            <!-- <button class="exit-btn text-[1.35rem] mt-2 ml-10 flex items-center hover:text-pink-300">
+                <i class="fa-solid fa-caret-right exit-icon text-[20px] text-white mr-4"></i>
+                Chiqish
+            </button> -->
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
