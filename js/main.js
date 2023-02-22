@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', (e) => {
-    localStorage.clear()
     e.preventDefault()
+
     // Variables
     const continueBtn = document.querySelector('.Continue')
     const beginBtn = document.querySelector('.begin-btn')
@@ -42,6 +42,10 @@ window.addEventListener('DOMContentLoaded', (e) => {
                 num = Math.floor(Math.random() * 21)
                 xNum.textContent = 'Topildiiii !'
                 xNum.setAttribute('class', 'text-4xl text-green-400')
+                setInterval(()=>{
+                    xNum.textContent = '?'
+                    xNum.setAttribute('class', 'text-4xl text-gray-400')
+                },3000)
                 attempts.value = 5
                 attempts.textContent = attempts.value
                 maxBall.textContent = count
